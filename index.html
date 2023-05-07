@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="spread">
+
+        </div>
+        <div class="torch">
+            <button class="on-off-btn">
+                On/off
+            </button>
+        </div>
+    </div>
+
+    <script>
+const spread= document.querySelector('.spread');
+const torch=document.querySelector('.torch');
+const on_off_btn=document.querySelector('.on-off-btn');
+
+
+on_off_btn.addEventListener('click',()=>{
+
+    spread.classList.toggle('spread-colors')
+    torch.classList.toggle('turn-on-torch');
+})
+    </script>
+</body>
+</html>
